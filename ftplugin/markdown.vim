@@ -1,9 +1,9 @@
-syn match pomoAll "\v---? (\d+\.?5?\/)?\d+$"
-syn match pomoHalf   "---\? \.5$"
-syn match pomoOne   "\v---? (\d\.?5?\/)?1$"
-syn match pomoTwo   "\v---? (\d\.?5?\/)?2$"
-syn match pomoThree "\v---? (\d\.?5?\/)?3$"
-syn match pomoFour  "\v---? (\d\.?5?\/)?4$"
+syn match pomoAll   "\v---? (\d+\.?5?\/)?\d+(\.5)?$"
+syn match pomoHalf  "\v---? (\d\.?5?\/)?0?\.5$"
+syn match pomoOne   "\v---? (\d\.?5?\/)?1(\.5)?$"
+syn match pomoTwo   "\v---? (\d\.?5?\/)?2(\.5)?$"
+syn match pomoThree "\v---? (\d\.?5?\/)?3(\.5)?$"
+syn match pomoFour  "\v---? (\d\.?5?\/)?4(\.5)?$"
 
 " blue
 hi pomoOne ctermbg=4 ctermfg=8
