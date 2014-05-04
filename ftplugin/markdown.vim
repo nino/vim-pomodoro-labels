@@ -1,22 +1,19 @@
-syn match pomoAll "--- \(\d\/\)\?\d$"
-syn match pomoHalf   "--- \.5$"
-syn match pomoOne   "--- \(\d\/\)\?1$"
-syn match pomoTwo   "--- \(\d\/\)\?2$"
-syn match pomoThree "--- \(\d\/\)\?3$"
-syn match pomoFour  "--- \(\d\/\)\?4$"
-syn match pomoFive  "--- \(\d\/\)\?5$"
+syn match pomoAll   "\v---? (\d+\.?5?\/)?\d+(\.5)?$"
+syn match pomoHalf  "\v---? (\d\.?5?\/)?0?\.5$"
+syn match pomoOne   "\v---? (\d\.?5?\/)?1(\.5)?$"
+syn match pomoTwo   "\v---? (\d\.?5?\/)?2(\.5)?$"
+syn match pomoThree "\v---? (\d\.?5?\/)?3(\.5)?$"
+syn match pomoFour  "\v---? (\d\.?5?\/)?4(\.5)?$"
 
-" black
-hi pomoAll ctermbg=52 ctermfg=white
 " blue
-hi pomoHalf ctermbg=21 ctermfg=white
+hi pomoOne ctermbg=4 ctermfg=8
+" cyan
+hi pomoTwo ctermbg=6 ctermfg=8
 " green
-hi pomoOne ctermbg=28 ctermfg=white
+hi pomoThree ctermbg=2 ctermfg=8
 " yellow
-hi pomoTwo ctermbg=100 ctermfg=white
+hi pomoFour ctermbg=3 ctermfg=8
 " orange
-hi pomoThree ctermbg=130 ctermfg=white
-" red
-hi pomoFour ctermbg=160 ctermfg=white
+hi pomoAll ctermbg=9 ctermfg=8
 " purple
-hi pomoFive ctermbg=92 ctermfg=white
+hi pomoHalf ctermbg=13 ctermfg=8
